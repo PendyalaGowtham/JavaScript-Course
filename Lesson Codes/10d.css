@@ -1,0 +1,35 @@
+.gaming-btn{
+     color: black;
+     background-color: rgb(232, 229, 229);
+     cursor: pointer;
+     border: none;
+     padding: 6px 11px;
+     border-radius: 5px;
+     margin-top: 20px;
+  }
+              
+ .music-btn{
+     color: black;
+     background-color: rgb(232, 229, 229);
+     cursor: pointer;
+     border: none;
+     padding: 6px 11px;
+     border-radius: 5px;
+     margin-top: 20px;
+     }
+
+ .tech-btn{
+     color: black;
+     background-color: rgb(232, 229, 229);
+     cursor: pointer;
+     border: none;
+     padding: 6px 11px;
+     border-radius: 5px;
+     margin-top: 20px; 
+    }
+
+ .is-toggled{
+     color: white;
+     background-color:black ;
+        }
+

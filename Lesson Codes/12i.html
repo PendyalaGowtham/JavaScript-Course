@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> App</title> 
+    </head>
+    <button onclick="messages++" class="js-add"> Add </button>
+    <button onclick="removeMessage()" class="js-remover"> Remove </button>
+
+
+<body>
+
+    
+    <script>
+
+      function removeMessage(){
+        if(messages > 0){
+            messages--
+        }
+      }
+
+
+
+        let messages = 2;
+    setInterval(
+        function(){
+            if(messages > 0){
+                if(document.title === 'App'){
+                 document.title = `(${messages}) New messages`
+            }else{
+                 document.title = 'App'
+            }
+            }
+           
+        } , 1000
+    )
+  
+       
+
+    </script>
+</body>
+</html> 

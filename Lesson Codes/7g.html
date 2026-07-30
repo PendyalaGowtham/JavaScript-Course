@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 7G Example</title>
+    </head>
+
+    <body>
+
+         <p> Hello </p>
+
+
+        <script>
+            function convertLength(length, from, to){
+                let result = ''
+                if( from === to ){
+                    result = length;
+                }else if(from === 'km'){
+                    if(to === 'miles'){
+                        result = (length * 0.621371);
+                    }else if (to === 'ft'){
+                        result = (length * 3280.84)
+                    }else{
+                 result = `invalid unit: ${from} to ${to}`;
+                       }
+
+                }else if( from === 'miles' ){
+                    if(to === 'km'){
+                        result = (length * 1.60934);
+                    }else if (to === 'ft'){
+                        result = (length * 5280);
+                    }else{
+                 result = `invalid unit: ${from} to ${to}`;
+                       }
+
+                }else if( from === 'ft' ){
+                    if(to === 'miles'){
+                        result = (length / 5280);
+                    }else if (to === 'km'){
+                        result = (length/3280.84);
+                                             
+                    }
+                    else{
+                        result = `invalid unit: ${from} to ${to}`;
+                       }
+                } else{
+                 result = `invalid units: ${from} to ${to}`;
+                       } 
+                       
+                return `${result} ${to}`;
+s
+            }
+
+        const result =  convertLength(10000, 'ft','km');
+        console.log(result);
+
+        console.log(convertLength(1000,'miles','miles'));
+        </script>
+    </body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+            
+        </script>
+    </body>
+
+
+</html>

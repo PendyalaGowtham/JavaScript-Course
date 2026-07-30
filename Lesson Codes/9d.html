@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 9d excecise</title>
+    </head>
+
+    <body>
+
+        <input placeholder="Name" class="place-holder" onkeydown="keyDown(event)">
+        <button onclick="showName()"> Submit </button>
+        <p class="name" ></p>
+        <script>
+            function showName(){
+                const x = document.querySelector('.place-holder').value 
+              
+                document.querySelector('.name').innerHTML = 
+                `Your name is: ${x}`;
+            }
+
+            function keyDown(key){
+                if(key.key === 'Enter'){
+                    showName();
+                }
+            }
+
+        </script>
+
+    </body>
+</html>

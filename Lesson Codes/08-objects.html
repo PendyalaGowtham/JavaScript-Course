@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Objects</title>
+
+    </head>
+
+    <body>
+        <p> Hello</p>
+        <script>
+            const product = {
+                name : 'book',
+                size : 25
+            };
+
+            
+
+            console.log(product);
+            console.log(product.name);
+
+
+            product.cost = 12;
+            console.log(product);
+
+
+            delete product.size;
+                        console.log(product);
+
+
+            const car ={
+                name : 'swift',
+                model :'lxi',
+                year : 2025 ,
+                rating : {
+                    'stars' : 4,
+                    'count' : 80,
+                    'delivery-time' : '1 day'
+                },
+                raj:  function fun1(){
+                    console.log('hello');
+                }
+            };
+
+            //car.ratings = 3;
+            delete car.year;
+        car.raj();
+        console.log(car);
+
+
+        const x= JSON.stringify(car);
+            
+         console.log(x);
+         console.log(JSON.parse(x));
+        </script>
+    </body>
+
+
+</html>

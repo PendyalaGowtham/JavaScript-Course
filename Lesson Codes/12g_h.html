@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> App</title> 
+    </head>
+    <button onclick="messages++" class="js-add"> Add </button>
+    <button onclick="messages--" class="js-remover"> Remove </button>
+
+
+<body>
+
+    
+    <script>
+
+        let messages = 2;
+    setInterval(
+        function(){
+            if(document.title === 'App'){
+                 document.title = `(${messages}) New messages`
+            }else{
+                 document.title = 'App'
+            }
+           
+        } , 1000
+    )
+  
+
+    //  function updateMessage(){
+    //      document.querySelector('.js-text').innerHTML = 'Added'
+        
+    //     clearTimeout(id);
+    //     id = setTimeout( 
+    //         function(){
+    //              document.querySelector('.js-text').innerHTML = ''; 
+    //             console.log("HI") }, 4000
+    //     )
+    //  }
+       
+
+    </script>
+</body>
+</html> 

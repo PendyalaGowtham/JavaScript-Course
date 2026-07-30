@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <head>
+          <title> 10a Exercise</title>
+
+          <style>
+            .add-to-cart-btn{
+                background-color: rgb(255, 216, 20);
+                border-radius: 50px;
+                border: none;
+                padding: 8px 30px;
+                margin-top: 20px;
+
+            }
+
+            .request-btn{
+                color: white;
+                background-color: black;
+                border: none;
+                border-radius: 3px;  
+                padding: 9px 9px;
+                margin-right: 5px;
+
+            }
+            .schedule-btn{
+                color: black;
+                background-color: rgb(231, 229, 229);
+                border: none;
+                border-radius: 3px;
+                padding: 9px 9px;
+            }
+          </style>
+        </head>
+
+        <button class="add-to-cart-btn"> Add to Cart</button>
+        <p></p>
+        <button class="request-btn"> Request now</button>
+        <button class="schedule-btn"> Schedule for later</button>
+        <p> </p>
+        <button class="js-button"> Test</button>
+
+       <script>
+
+            const chk = document.querySelector('.js-button');
+            console.log(chk.classList.contains('js-button'));
+
+
+       </script>
+    </body>
+
+    
+</html>

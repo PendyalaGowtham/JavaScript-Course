@@ -1,0 +1,41 @@
+            body{
+                background-color: rgb(15, 15, 15);
+                color: white;
+                font-family: Arial;
+            }
+
+            .game-header{
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .game-btns{
+                font-size: 40px;
+                border-radius:90px;
+                padding: 32px 32px;
+                margin-right:10px;
+                background-color: transparent;
+                border: 3px solid white;
+                margin-bottom: 30px;
+            }
+
+            .js-result{
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            .emoji{
+                width: 60px;
+            }
+
+            .js-score{
+                margin-top: 50px;
+            }
+
+            .reset-score{
+                border:none;
+                padding: 12px 15px;
+                background-color: white;
+                font-size: 15px;
+            }
+

@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 12c & 12d</title> 
+    </head>
+
+<body>
+
+    <button onclick="updateButton()" class="js-btn"> Start </button>
+    <script>
+
+     function updateButton(){
+         document.querySelector('.js-btn').innerHTML = 'Loading...'
+        setTimeout( 
+            function(){
+                 document.querySelector('.js-btn').innerHTML = 'Finished!'
+            }, 1000
+        )
+     }
+       
+
+    </script>
+</body>
+</html>

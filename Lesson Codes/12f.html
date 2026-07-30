@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 12e</title> 
+    </head>
+
+<body>
+
+    <button onclick="updateMessage()" class="js-btn"> Add to Cart </button>
+    <p class="js-text"> </p>
+    <script>
+
+        let id;
+     function updateMessage(){
+         document.querySelector('.js-text').innerHTML = 'Added'
+        
+        clearTimeout(id);
+        id = setTimeout( 
+            function(){
+                 document.querySelector('.js-text').innerHTML = ''; 
+                console.log("HI") }, 4000
+        )
+     }
+       
+
+    </script>
+</body>
+</html> 

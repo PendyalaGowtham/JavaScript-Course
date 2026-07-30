@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title> 9C Exercise</title>
+    </head>
+    <body>
+
+        <button onclick="selection('heads')"> Heads </button>
+
+        <button onclick="selection('tails')"> Tails </button>
+
+        <p class="js-selection"> </p>
+
+        <script>
+
+            function selection(move){
+                if(move === 'heads'){
+                    document.querySelector('.js-selection').innerHTML = "You Choose : Heads"
+                }
+                else{
+                   document.querySelector('.js-selection').innerHTML = "You Choose : Tails"  
+                }
+            }
+           
+
+       </script>
+    </body>
+    
+</html>

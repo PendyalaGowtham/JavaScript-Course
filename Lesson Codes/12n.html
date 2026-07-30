@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Exercise 12n_12o</title> 
+    </head>
+
+<body>
+
+    <script>
+     
+         function  removeEgg(foods){
+
+            let count = 2;
+           return foods.filter( value =>  {
+           
+            if( value === 'egg' && count > 0){
+                count --;
+                return false;
+            }
+            return true;
+           })
+            }
+
+            console.log( removeEgg(['rice','egg','bag','you','egg']));
+            console.log( removeEgg(['egg','rice','egg',,'egg','ypu']));
+
+                  console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+
+    </script>
+</body>
+</html>

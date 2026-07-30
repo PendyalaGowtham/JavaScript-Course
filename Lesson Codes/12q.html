@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 12q</title> 
+    </head>
+
+<body>
+
+    <button class="js-btn"> Start </button>
+    <script>
+
+     document.querySelector('.js-btn').addEventListener('click', () => {
+         document.querySelector('.js-btn').innerHTML = 'Loading...'
+        setTimeout( 
+            () => {
+               document.querySelector('.js-btn').innerHTML = 'Finished!'
+            }, 1000
+        )
+     })
+
+    //  function updateButton(){
+    //      document.querySelector('.js-btn').innerHTML = 'Loading...'
+    //     setTimeout( 
+    //         () => {
+    //            cinnerHTML = 'Finished!'
+    //         }, 1000
+    //     )
+    //  }
+       
+
+    </script>
+</body>
+</html>
